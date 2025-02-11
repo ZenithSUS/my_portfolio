@@ -175,9 +175,66 @@ span {
     margin-right: 2rem;
 }
 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+progress {
+    width: 100%;
+    height: 2rem;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--text-color);
+    border-radius: 1rem;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--main-color);
+    border-radius: 1rem;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--main-color);
+}
+
+.bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.bars-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.bars-box h3 {
+    flex: 1;
+    font-size: 1.6rem;
+}
+
+.bars-box progress {
+    flex: 3;
+}
+
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+
+.about-content{
+    width: 100%;
 }
 
 .about-content h2 {
@@ -262,10 +319,12 @@ span {
     width: 100%;
     height: 30rem;
     transition: .5s ease;
+    border-radius: 2rem;
 }
 
 .portfolio-box:hover img {
     transform: scale(1.1);
+    filter: blur(5px);
 }
 
 .portfolio-box .portfolio-layer {
