@@ -105,6 +105,7 @@ span {
     width: 35vw;
     border-radius: 100%;
     animation: floatImage 4s ease-in-out infinite;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 @keyframes floatImage {
@@ -173,6 +174,8 @@ span {
     width: 35vw;
     border-radius: 100%;
     margin-right: 2rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    animation: floatImage 4s ease-in-out infinite;
 }
 
 .skills-container {
